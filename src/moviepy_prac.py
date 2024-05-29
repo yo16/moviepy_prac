@@ -19,4 +19,4 @@ if __name__=='__main__':
     # ※ 複数の拡張子を変えていくつかのファイルを作りたいので、拡張子手前までの文字列
     out_file_stem = str(movie_file.parent / f"{movie_file.stem}_out")
 
-    main(movie_file, out_file_stem)
+    main(str(movie_file), out_file_stem)
