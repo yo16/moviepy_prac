@@ -7,7 +7,7 @@ def main(input_file, output_file_stem):
 
     # 切り出し
     top = 124
-    clip2 = clip1.fx(vfx.crop, x1=0, y1=top, x2=320, y2=top+220)
+    clip2 = clip1.crop(x1=0, y1=top, x2=320, y2=top+220)
 
     # 保存
     clip2.write_videofile(f"{output_file_stem}.mp4")
